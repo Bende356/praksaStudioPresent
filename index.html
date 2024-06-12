@@ -3,13 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Document</title>
 </head>
 
@@ -25,18 +27,30 @@
             <li><a href="#">Impressum</a></li>
             <li><a href="#">Kontakt</a></li>
             <li><a href="#">download</a></li>
+            
         </ul>
     </div>
+
     <div class="navGray">
         <p class="openText"><span class="bold">Opentime:</span> Di. - Fr.: 07:00-13:00 und 15:00-18:30. Sa.: 07:30 -
             12:30</p>
     </div>
-    <img src="images/logo.png" class="logo">
-    <div class="slider">
-        <img src="images/silderPlaceholder2.png">
+    <img src="images/logo.png" class="logoTop">
+    <div class="swiper swiper2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/silderPlaceholder2.png"></div>
+            <div class="swiper-slide"><img src="images/silderPlaceholder2.png"></div>
+            <div class="swiper-slide"><img src="images/silderPlaceholder2.png"></div>
+            <div class="swiper-slide"><img src="images/silderPlaceholder2.png"></div>
+            <div class="swiper-slide"><img src="images/silderPlaceholder2.png"></div>
+        </div>
+        <div class="swiper-button-prev" id="prev"></div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next" id="next"></div>
     </div>
+
     <div class="horizontalHalfDivide">
-        <div class="sliderLeftContent sliderHalf">
+        <div class="LeftContent ">
             <h1>Dry aged</h1>
             <h2>Alte Wutz, Dry Aged</h2>
             <p>Halt amet, consectetur Handtasche elit, sed do eiusmod tempor Stuttgart ut labore et dolore magna 99
@@ -50,7 +64,7 @@
                 <button type="button">Alte Wurtz</button>
             </div>
         </div>
-        <div class="sliderRightContent sliderHalf">
+        <div class="RightContent ">
             <div class="bigImg">
                 <img src="images/hus1.png" class="imgBig">
             </div>
@@ -63,7 +77,7 @@
     </div>
 
     <div class="horizontalHalfDivide2">
-        <div class="sliderLeftContent sliderHalf">
+        <div class="LeftContent">
             <h1>Buchen Sie den<br> Grillkurs jetzt</h1>
             <ul>
                 <li>professioneller Lehrer</li>
@@ -73,10 +87,193 @@
             </ul>
             <button type="button">Grillkurs</button>
         </div>
-        <div class="sliderRightContent sliderHalf">
+        <div class="RightContent">
             <img src="images/husostal.png" class="imgBig">
         </div>
     </div>
+    <div class="blackContent">
+        <div class="topContent">
+            <h1>Das Handwerk</h1>
+            <h2>alles über unsere Hausgemachte Produkte</h2>
+            <p>Halt amet, consectetur Handtasche elit, sed do eiusmod tempor Stuttgart ut labore et dolore magna 99
+                Luftballons Ut enim ad minim veniam, Turnbeutel nostrud exercitation ullamco laboris nisi Sprechen Sie
+                deutsch aliquip ex ea commodo consequat.<br><br> Wiener Schnitzel aute irure dolor in Guten Tag mollit
+                anim
+                Stuttgart.<br><br> id latine indoctum complectitur HugoClub Mate mea meliore denique nominavi id.
+                Ohrwurm
+                expetenda
+                nam an, his ei Reise euismod assentior</p>
+            <button type="button">Das Handwerk</button>
+        </div>
+        <img src="images/vonalLogo.png" class="lineLogo">
+        <div class="images">
+            <img src="images/hus5.png" class="smallImg firstImg">
+            <img src="images/hus6.png" class="smallImg">
+            <img src="images/hus7.png" class="smallImg">
+            <img src="images/hus8.png" class="smallImg">
+        </div>
+    </div>
+    <div class="horizontalHalfDivide3">
+        <div class="LeftContent">
+            <img src="images/fuszerek.png" class="imgBig">
+        </div>
+        <div class="RightContent">
+            <h1>Custome spices for your meat</h1>
+            <h2>Turnbeutel nostrud exercitation ullamco Sprechen Sie deutsch</h2>
+            <p>Odio principes iracundia Müller Rice pri. Ut vel solum mandamus, Kartoffelkopf natum adversarium ei ius,
+                diam Schmetterling honestatis eum.<br><br> Wiener Schnitzel amet, consectetur Handtasche elit, sed do
+                eiusmod
+                tempor Stuttgart ut labore et dolore magna 99 Luftballons Ut enim ad minim veniam, Turnbeutel nostrud
+                exercitation ullamco laboris nisi Sprechen Sie deutsch aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+    <div class="scrollBackground">
+        <h1>Fleischversand</h1>
+        <button type="button">Jetzt bestellen</button>
+    </div>
+    <div class="longBlackContent">
+        <div class="row">
+            <div class="LeftContent">
+                <img src="images/genussnetzLogo.png" class="imgBig">
+            </div>
+            <div class="RightContent">
+                <h2>Metzgerei Brath ist Mitglied im Genussnetzwerk</h2>
+                <button type="button">Gehen zu site</button>
+            </div>
+        </div>
+        <img src="images/vonalLogo.png" class="lineLogo">
+        <div class="row">
+            <h2 class="medalH2">Auszeichnungen</h2>
+            <div class="medalDiv">
+                <img src="images/medal1.png" class="medal">
+                <p class="medalText">Tollit argumentum genau
+                    Saepe lobortis</p>
+            </div>
+            <div class="medalDiv">
+                <img src="images/medal2.png" class="medal">
+                <p class="medalText">Schneewittchen
+                    denique</p>
+            </div>
+            <div class="medalDiv">
+                <img src="images/medal3.png" class="medal">
+                <p class="medalText">Grimms Märchen
+                    expetenda</p>
+            </div>
+            <div class="medalDiv">
+                <img src="images/medal4.png" class="medal">
+                <p class="medalText">Mettwurst mei
+                    ullum gloriatur.</p>
+            </div>
+        </div>
+        <img src="images/vonalLogo.png" class="lineLogo">
+        <div class="sliderHeader">
+            <span class="empfehlungs">Empfehlungs</span>
+            <h2>Was die Leute über uns sagen</h2>
+        </div>
+        <div class="swiper swiperBottom">
+            <div class="swiper-button-prev" id="prev">
+            </div>
+            <div class="swiper-button-next" id="next">
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slideContent">
+                        <p class="smallp">Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener Schnitzel aute
+                            irure
+                            dolor in
+                            reprehenderit Guten Tag mollit anim Stuttgart.</p>
+                        <p class="name">Maria Kartofeln</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slideContent">
+                        <img src="images/grill.png" class="grill">
+                        <img src="images/stars.png" class="stars">
+                        <p class="smallpSlide2">Wiener Schnitzel amet, consectetur Handtasche elit, sed do eiusmod
+                            tempor Stuttgart ut labore
+                            et
+                            dolore magna Luftballons Ut Turnbeutel nostrud exercitation ullamco .</p>
+
+                        <span class="name">Halling Tobias<br>Koch</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slideContent">
+                        <p class="smallp">Achtung fur atine indoctum complectitur HugoClub Mate mea meliore denique
+                            nominavi
+                            id. Ohrwurm expetenda nam an, his ei Reise euismod assentior.</p>
+                        <p class="name">Rene Weinstein</p>
+                    </div>
+                </div>
+            </div>
+            <img src="images/quote.png" class="quote">
+        </div>
+    </div>
+    <footer class="firstFooter">
+        <ul class="leftList">
+            <li>Klauprechtstraße 25<br> 76137 Karlsruhe, Germany</li>
+            <li>+49 721 358060</li>
+            <li>info@partyservice-brath.de</li>
+        </ul>
+        <img src="images/logo.png" class="logoBottom">
+        <div class="rightSocialMedia">
+            <span>Besuchen Sie uns auf:</span>
+            <img src="images/twitter.png" class="sMedia">
+            <img src="images/fb.png" class="sMedia">
+            <img src="images/ig.png" class="sMedia">
+            <img src="images/yt.png" class="sMedia">
+        </div>
+    </footer>
+    <footer class="secondFooter">
+        <div class="leftText">
+            © 2020 by Metzgerei Heiko Brath GmbH, Deutschland
+        </div>
+        <div class="rightText">
+            Code and design by <span class="studioPresent">StudioPresent</span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        function openHamburger() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+    <script type="module">
+
+        var swiper = new Swiper('.swiperBottom', {
+            slidesPerView: 3,
+
+            initialSlide: 1,
+            spaceBetween: 30,
+            centeredSlides: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        var swiper = new Swiper('.swiper2', {
+            slidesPerView: 1,
+            centeredSlides: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        document.documentElement.style.setProperty("--swiper-theme-color", "#fff")
+
+    </script>
 </body>
 
 </html>
