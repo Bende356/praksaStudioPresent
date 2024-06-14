@@ -1,44 +1,3 @@
-/* Add media queries for responsive design */
-/* Mobile devices (max-width: 768px) */
-@media (max-width: 768px) {
-  /* Adjust navigation menu */
-  .nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-  .nav li {
-    display: none;
-  }
-  .hamburger {
-    display: block;
-  }
-  /* Adjust horizontal half divides */
-  .horizontalHalfDivide,
-  .horizontalHalfDivide2 {
-    flex-direction: column;
-  }
-  .LeftContent,
-  .RightContent {
-    margin: 0%;
-    padding: 0%;
-  }
-  .RightContent {
-    top: 0%;
-    margin: 0%;
-    padding: 0%;
-  }
-  .buttons {
-    flex-direction: column;
-  }
-}
-/* Tablet devices (max-width: 1024px) */
-@media (max-width: 1024px) {
-  /* Adjust layout and styling for tablet devices */
-}
-/* Desktop devices (min-width: 1025px) */
-@media (min-width: 1025px) {
-  /* Adjust layout and styling for desktop devices */
-}
 .hamburger {
   display: none;
   float: right;
@@ -48,27 +7,27 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font: 100% Helvetica, sans-serif;
-  font-family: "Roboto", sans-serif;
+  font: 100% "Roboto", sans-serif;
   color: #fff;
   background-color: #000;
 }
 
 .nav {
   background-color: #B50014;
-  margin: 0;
-  padding: 1%;
-  height: 12%;
+  height: 93px;
   font-size: 16px;
   font-weight: 700;
   line-height: 18.75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navGray {
   background-color: #252525;
   color: #fff;
   text-align: right;
-  margin-top: 0.1%;
+  height: 30px;
 }
 
 .openText {
@@ -102,36 +61,38 @@ li a {
 }
 
 img {
-  width: 100%;
-  height: 550px;
   object-fit: cover;
-}
-
-.slider {
-  height: 550px;
-  padding: 0;
-  margin: 0;
+  width: 100%;
 }
 
 .swiper2 {
+  height: 679px;
+}
+.swiper2 img {
   width: 100%;
-  max-width: 100vw;
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 679px;
+  object-fit: cover;
 }
 .swiper2 .swiper-slide {
-  max-height: 90vh;
+  max-height: 100vh;
   max-width: 100vw;
-  padding: 0;
-  margin: 0;
-  padding: 0;
-  margin: 0;
   text-align: center;
   font-size: 18px;
   background: #fff;
+}
+.swiper2 .swiper-pagination {
+  padding-bottom: 52px;
+  width: 140px;
+}
+.swiper2 .swiper-button-prev {
+  position: relative;
+  bottom: 0;
+  padding-bottom: 52px;
+}
+.swiper2 .swiper-button-next {
+  position: relative;
+  bottom: 0;
+  padding-bottom: 52px;
 }
 
 .logoTop {
@@ -141,28 +102,37 @@ img {
   right: 75%;
   top: 0%;
   bottom: 0%;
-  width: 150.24px;
-  height: 151.42px;
+  width: 177.2px;
+  height: 177.2px;
 }
 
 .lineLogo {
   object-fit: contain;
-  height: auto;
+  width: 1098px;
+  height: 85px;
   padding-top: 5%;
 }
 
 .horizontalHalfDivide {
-  height: 550px;
+  height: 508px;
+  width: 1089px;
+  margin: 114px 0px 90px 0px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .horizontalHalfDivide .LeftContent {
-  margin-left: 20%;
-  width: 25%;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: left;
 }
 .horizontalHalfDivide .LeftContent p {
+  width: 427px;
+  height: 219px;
   font-weight: 300;
   line-height: 24px;
 }
@@ -173,32 +143,32 @@ img {
   margin-top: 0;
 }
 .horizontalHalfDivide .LeftContent .buttons {
+  margin-top: 66px;
   display: flex;
   flex-direction: row;
 }
 .horizontalHalfDivide .LeftContent button {
   background-color: #B50014;
-  padding: 2% 12%;
-  margin-right: 5%;
+  width: 174px;
+  height: 47px;
+  margin-right: 16px;
   color: #fff;
   border-radius: 25px;
   border-color: #fff;
 }
 .horizontalHalfDivide .RightContent {
-  padding-top: 5%;
   width: 50%;
-  margin-left: 5%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: right;
 }
 .horizontalHalfDivide .RightContent img {
   object-fit: contain;
-  height: auto;
 }
 .horizontalHalfDivide .RightContent .imgBig {
-  width: 60%;
-  padding-bottom: 1%;
+  width: 537px;
+  height: 326px;
+  margin-bottom: 15px;
 }
 .horizontalHalfDivide .RightContent .smallImages {
   padding: 0;
@@ -207,52 +177,74 @@ img {
   flex-direction: row;
 }
 .horizontalHalfDivide .RightContent .imgSmall {
-  width: 18%;
-  padding-right: 2%;
+  width: 167px;
+  height: 167px;
+  margin-right: 17px;
 }
 
 .horizontalHalfDivide2 {
-  height: 550px;
+  height: 642px;
   display: flex;
+  justify-content: center;
+  /* Center the .LeftContent and .RightContent horizontally */
+  align-items: center;
+  /* Center the .LeftContent and .RightContent vertically */
   background-color: #B50014;
 }
 .horizontalHalfDivide2 .LeftContent {
+  margin-left: auto;
+  margin-right: auto;
   width: 50%;
-  margin-left: 20%;
-  width: 30%;
+  /* Adjust width as necessary */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* Center the .LeftContent and .RightContent horizontally */
+  align-items: center;
+  /* Center the .LeftContent and .RightContent vertically */
+  text-align: left;
+}
+.horizontalHalfDivide2 .LeftContent h1 {
+  width: auto;
+  /* Let width adjust to content */
+  height: auto;
+  /* Let height adjust to content */
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
 }
 .horizontalHalfDivide2 .LeftContent ul {
   display: flex;
   flex-direction: column;
   list-style-type: disc;
-  margin-top: 1em;
-  margin-bottom: 1 em;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 29px 0 47px 0;
   padding-left: 20px;
+  width: auto;
+  /* Let width adjust to content */
+  height: auto;
+  /* Let height adjust to content */
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
 }
 .horizontalHalfDivide2 .LeftContent li {
-  padding-top: 2%;
   font-weight: 300;
   line-height: 24px;
 }
 .horizontalHalfDivide2 .LeftContent button {
   background-color: #fff;
-  padding: 2% 12%;
-  margin-top: 7%;
-  margin-right: 5%;
   color: #000;
   border-radius: 25px;
   border-color: #fff;
-  width: 30%;
-  display: flex;
-  justify-content: center;
+  width: 174px;
+  height: 47px;
 }
 .horizontalHalfDivide2 .RightContent {
   width: 50%;
+  height: 100%;
+}
+.horizontalHalfDivide2 .RightContent img {
+  height: 100%;
 }
 
 .blackContent {
@@ -262,7 +254,8 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 3% 25%;
+  width: 1098px;
+  margin: 119px auto 227px auto;
 }
 .blackContent .topContent {
   padding: 0% 10%;
@@ -271,24 +264,37 @@ img {
   font-weight: 700;
   font-size: 32px;
   line-height: 26px;
+  margin: 0px auto 16px auto;
+  width: 208px;
+  height: 26px;
 }
 .blackContent h2 {
   font-weight: 700;
   font-size: 22px;
   line-height: 25.78px;
+  margin: 0px auto 65px auto;
 }
 .blackContent p {
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
+  width: 652px;
+  margin: 0px auto 40px auto;
 }
 .blackContent button {
   background-color: #B50014;
-  padding: 2% 8%;
-  margin-top: 4%;
+  width: 174px;
+  height: 47px;
   color: #fff;
   border-radius: 25px;
   border-color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0px auto 82px auto;
+}
+.blackContent .lineLogo {
+  margin: 0px 0px 46px 0px;
 }
 .blackContent .images {
   display: flex;
@@ -297,34 +303,43 @@ img {
   padding: 3% 20%;
 }
 .blackContent .smallImg {
-  width: 40%;
-  height: 40%;
-  margin-left: 2%;
+  width: 262px;
+  height: 243px;
+  margin-left: 16px;
 }
 .blackContent .firstImg {
   margin-left: 0%;
 }
 
 .horizontalHalfDivide3 {
-  height: 550px;
+  height: 705px;
   display: flex;
   background-color: #B50014;
 }
 .horizontalHalfDivide3 .LeftContent {
   width: 50%;
 }
+.horizontalHalfDivide3 .LeftContent img {
+  height: 100%;
+}
 .horizontalHalfDivide3 .RightContent {
-  width: 30%;
+  width: 431px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin: 10% 15% 10% 5%;
-  padding: 10% 0%;
+  justify-content: left;
+  align-items: flex-start;
+  margin: 180px auto 181px 124px;
 }
 .horizontalHalfDivide3 h1 {
   font-weight: 700;
   font-size: 32px;
   line-height: 42px;
+  padding: 0;
+  margin-bottom: 8px;
+  width: 450px;
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
 }
 .horizontalHalfDivide3 h2 {
   font-weight: 700;
@@ -337,15 +352,13 @@ img {
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
-  padding-bottom: 10%;
 }
 .horizontalHalfDivide3 .imgBig {
   object-fit: cover;
 }
 
 .scrollBackground {
-  height: 400px;
-  margin: 0;
+  height: 540px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -359,66 +372,94 @@ img {
 }
 .scrollBackground button {
   background-color: #fff;
-  padding: 0.7% 3%;
+  width: 204px;
+  height: 47px;
   color: #000;
   border-radius: 25px;
   border-color: #fff;
-  display: flex;
-  justify-content: center;
+  margin-top: 40px;
+  font-weight: 400;
+  size: 16px;
+  line-height: 22px;
 }
 
 .longBlackContent {
+  display: flex;
   flex-direction: column;
-  padding: 3% 25%;
+  justify-content: center;
+  align-items: center;
+  margin: 127px auto 76px auto;
 }
 .longBlackContent .row {
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: center;
+  max-width: 1098px;
 }
 .longBlackContent .imgBig {
-  height: auto;
-}
-.longBlackContent .LeftContent {
-  width: 50%;
-  padding-right: 15%;
+  width: 365.2px;
+  height: 201.45px;
+  margin: auto 260px auto 450px;
 }
 .longBlackContent .RightContent {
-  padding-left: 5%;
-  width: 50%;
+  width: 409px;
+  margin-right: 435px;
   display: flex;
   flex-direction: column;
 }
 .longBlackContent h2 {
+  width: 409px;
   font-weight: 700;
   font-size: 32px;
 }
 .longBlackContent button {
   background-color: #B50014;
-  padding: 2% 12%;
-  margin-right: 5%;
   color: #fff;
   border-radius: 25px;
   border-color: #fff;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  width: 60%;
+  width: 174px;
+  height: 47px;
+}
+.longBlackContent .lineLogo2 {
+  margin-bottom: 157px;
+}
+.longBlackContent .lineLogo3 {
+  margin-bottom: 42px;
 }
 .longBlackContent .medalDiv {
   display: flex;
   flex-direction: column;
-  width: 14%;
-  padding-right: 2%;
+  justify-content: center;
+  align-items: center;
+  padding-left: 75px;
+  max-width: 176px;
 }
-.longBlackContent .medal {
-  height: auto;
+.longBlackContent .medal1 {
+  width: 118.98px;
+  height: 118.98px;
+}
+.longBlackContent .medal2 {
+  width: 120.46px;
+  height: 104.69px;
+}
+.longBlackContent .medal3 {
+  width: 116.66px;
+  height: 116.66px;
+}
+.longBlackContent .medal4 {
+  width: 121.75px;
+  height: 118.21px;
 }
 .longBlackContent .medalH2 {
-  padding-right: 4%;
   font-weight: 700;
   font-size: 32px;
   line-height: 42px;
+  max-width: 240px;
+  margin: 0;
+  padding: 0;
 }
 .longBlackContent p {
   font-weight: 300;
@@ -426,6 +467,7 @@ img {
   line-height: 18.75px;
   text-align: center;
   color: rgba(255, 255, 255, 0.5098039216);
+  max-width: 176px;
 }
 .longBlackContent .sliderHeader {
   display: flex;
@@ -433,11 +475,13 @@ img {
   justify-content: center;
   align-items: center;
 }
+.longBlackContent .sliderHeader h2 {
+  width: 468px;
+}
 .longBlackContent .empfehlungs {
   font-weight: 700;
   font-size: 18px;
   line-height: 21.09px;
-  margin-top: 3%;
   color: rgba(255, 255, 255, 0.5098039216);
 }
 .longBlackContent h2 {
@@ -447,82 +491,86 @@ img {
 }
 
 .swiperBottom {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 1098px;
+  height: 429x;
 }
-
-.swiper-slide {
-  margin: 3.5% 0% 3.5% 0%;
-  width: 500px;
-  max-height: 200px;
+.swiperBottom .swiper-slide {
+  width: 317px;
+  height: 257px;
   text-align: center;
   font-size: 18px;
   background: #1B1B1B;
   color: #000;
+  margin: 93px 0px 64px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+}
+.swiperBottom .swiper-slide .slideContent {
+  max-width: 429px;
+  max-height: 414px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.swiper-slide .slideContent {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.swiper-slide .smallp {
+.swiperBottom .swiper-slide .smallp {
   font-weight: 300;
   font-size: 12px;
   line-height: 18px;
   color: #FFFFFF;
-  margin: 10% 15% 0% 15%;
+  margin: 97px auto 23px auto;
 }
-.swiper-slide .name {
-  display: none;
+.swiperBottom .swiper-slide .name {
   font-weight: 400;
   font-size: 12px;
   line-height: 14.06px;
   position: absolute;
   bottom: 0%;
-  margin-bottom: 15%;
+  margin-bottom: 50px;
 }
-.swiper-slide .grill {
-  width: 20%;
+.swiperBottom .swiper-slide .grill {
+  width: 81px;
+  height: 81px;
   height: auto;
   padding: 5% 0% 3% 0%;
 }
-.swiper-slide .stars {
-  width: 20%;
-  height: auto;
+.swiperBottom .swiper-slide .stars {
+  width: 92px;
+  height: 30px;
   padding: 0%;
   margin: 0%;
 }
-.swiper-slide .smallpSlide2 {
+.swiperBottom .swiper-slide .smallpSlide2 {
   font-weight: 300;
   font-size: 12px;
   line-height: 18px;
   color: #FFFFFF;
-  margin: 2% 2% 0% 2%;
 }
-
-.swiper-slide-active {
+.swiperBottom .swiper-slide-active {
   margin: 0;
-  max-height: 250px;
-  width: 400px;
-  text-align: center;
+  padding: 0;
+  max-width: 429px;
+  max-width: 414px;
+  width: 429px;
+  height: 414px;
   font-size: 18px;
   background: #2A2A2A;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
-.swiper-slide-active .name {
-  display: block;
+.swiperBottom .swiper-slide-active .slideContent {
+  max-width: 429px;
+  max-height: 414px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .swiper-slide img {
@@ -537,7 +585,6 @@ img {
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
-  margin-left: 29%;
 }
 
 .swiper-button-next {
@@ -545,7 +592,6 @@ img {
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
-  margin-right: 29%;
 }
 
 .swiper-button-next::after {
