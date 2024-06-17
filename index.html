@@ -26,7 +26,7 @@
             <li><a href="#">Tagesessen</a></li>
             <li><a href="#">Impressum</a></li>
             <li><a href="#">Kontakt</a></li>
-            <li><a href="#">download</a></li>
+            <li><a href="#" class="icon"><img src="images/pdfIcon.png" class="smallIcon">download</a></li>
 
         </ul>
     </div>
@@ -211,13 +211,13 @@
     </div>
     <footer class="firstFooter">
         <ul class="leftList">
-            <li>Klauprechtstraße 25<br> 76137 Karlsruhe, Germany</li>
-            <li>+49 721 358060</li>
-            <li>info@partyservice-brath.de</li>
+            <li><img src="images/locationIcon.png" class="smallIcon">Klauprechtstraße 25<br> 76137 Karlsruhe, Germany</li>
+            <li><img src="images/phoneIcon.png" class="smallIcon">+49 721 358060</li>
+            <li><img src="images/mailIcon.png" class="smallIcon">info@partyservice-brath.de</li>
         </ul>
         <img src="images/logo.png" class="logoBottom">
         <div class="rightSocialMedia">
-            <span>Besuchen Sie uns auf:</span>
+            <span class="sMediaText">Besuchen Sie uns auf:</span>
             <img src="images/twitter.png" class="sMedia">
             <img src="images/fb.png" class="sMedia">
             <img src="images/ig.png" class="sMedia">
@@ -234,46 +234,7 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        function openHamburger() {
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-    </script>
-    <script type="module">
-
-        var swiper = new Swiper('.swiperBottom', {
-            slidesPerView: 3,
-
-            initialSlide: 1,
-            spaceBetween: 30,
-            centeredSlides: true,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-
-        var swiper = new Swiper('.swiper2', {
-            slidesPerView: 1,
-            centeredSlides: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-
-        document.documentElement.style.setProperty("--swiper-theme-color", "#fff")
-
-    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

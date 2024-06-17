@@ -22,6 +22,16 @@ body {
   justify-content: center;
   align-items: center;
 }
+.nav .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav .smallIcon {
+  width: 24px;
+  height: 28px;
+  margin-right: 6px;
+}
 
 .navGray {
   background-color: #252525;
@@ -254,11 +264,8 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 1098px;
+  width: 1090px;
   margin: 119px auto 227px auto;
-}
-.blackContent .topContent {
-  padding: 0% 10%;
 }
 .blackContent h1 {
   font-weight: 700;
@@ -299,8 +306,6 @@ img {
 .blackContent .images {
   display: flex;
   justify-content: center;
-  padding-top: 4%;
-  padding: 3% 20%;
 }
 .blackContent .smallImg {
   width: 262px;
@@ -493,6 +498,8 @@ img {
 .swiperBottom {
   width: 1098px;
   height: 429x;
+  padding: 0;
+  margin: 0 auto 0 auto;
 }
 .swiperBottom .swiper-slide {
   width: 317px;
@@ -552,8 +559,8 @@ img {
 .swiperBottom .swiper-slide-active {
   margin: 0;
   padding: 0;
-  max-width: 429px;
-  max-width: 414px;
+  max-width: 370px;
+  max-height: 414px;
   width: 429px;
   height: 414px;
   font-size: 18px;
@@ -620,8 +627,10 @@ footer {
 
 .firstFooter {
   background-color: #B50014;
-  height: 120px;
-  padding: 1% 20%;
+  padding: 17px auto 17px auto;
+  display: flex;
+  justify-content: center;
+  margin: 0;
 }
 .firstFooter ul {
   list-style-type: none;
@@ -630,50 +639,60 @@ footer {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  left: 15%;
+  margin-right: 377.8px;
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
+  width: 219px;
+  height: 112px;
+}
+.firstFooter ul .smallIcon {
+  width: 16px;
+  height: auto;
 }
 .firstFooter .logoBottom {
-  width: 15%;
-  height: auto;
-  position: relative;
-  bottom: 2%;
+  width: 131.2px;
+  height: 131.2px;
+  margin-right: 230px;
 }
 .firstFooter .rightSocialMedia {
   margin: 0;
   padding: 0;
   overflow: hidden;
   display: flex;
-  position: absolute;
-  right: 15%;
+  justify-content: center;
+  width: 365px;
+}
+.firstFooter .sMediaText {
+  margin-top: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.75px;
 }
 .firstFooter .sMedia {
-  width: 12%;
-  height: auto;
+  width: 40.85px;
+  height: 41px;
   margin-left: 2%;
 }
 
 .secondFooter {
   background-color: #66000B;
-  height: 20px;
-  padding: 0% 20%;
   font-weight: 400;
   font-size: 12px;
   line-height: 28px;
   color: rgba(255, 255, 255, 0.5019607843);
-  margin-bottom: 0;
-  padding-bottom: 0;
+  margin: 0;
+  padding: 0px auto 4px auto;
+  display: flex;
+  gap: 853px;
 }
 .secondFooter .leftText {
-  position: absolute;
-  left: 15%;
+  width: 288px;
+  height: 28px;
 }
 .secondFooter .rightText {
-  position: absolute;
-  right: 15%;
+  width: 182px;
+  height: 28px;
 }
 .secondFooter .rightText .studioPresent {
   font-style: italic;
