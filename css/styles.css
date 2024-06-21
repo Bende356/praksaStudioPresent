@@ -1,3 +1,138 @@
+@media (max-width: 600px) {
+  .horizontalHalfDivide, .horizontalHalfDivide2, .horizontalHalfDivide3, .longBlackContent {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .horizontalHalfDivide img, .horizontalHalfDivide2 img, .horizontalHalfDivide3 img {
+    width: 100%;
+    height: auto;
+  }
+  .scrollBackground {
+    height: auto;
+    padding: 20px;
+    background-position: center;
+    background-attachment: scroll;
+  }
+  .popup {
+    width: 80%;
+  }
+  .navGray p {
+    font-size: 14px;
+  }
+  .nav .icon, .navGray .icon {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .nav {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .nav ul {
+    flex-direction: column;
+  }
+  .nav .icon, .nav .smallIcon {
+    display: none;
+  }
+  .navGray {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .navGray .icon, .navGray .smallIcon {
+    display: none;
+  }
+  .navGray p {
+    font-size: 12px;
+  }
+  .swiper2 {
+    height: auto;
+  }
+  .swiper2 img {
+    height: auto;
+  }
+  .swiper2 .swiper-button-prev, .swiper2 .swiper-button-next {
+    display: none;
+  }
+  .horizontalHalfDivide,
+  .horizontalHalfDivide2,
+  .horizontalHalfDivide3,
+  .longBlackContent {
+    flex-direction: column;
+    padding: 10px;
+    overflow: hidden;
+  }
+  .horizontalHalfDivide img,
+  .horizontalHalfDivide2 img,
+  .horizontalHalfDivide3 img {
+    width: 100%;
+    height: auto;
+  }
+  .blackContent {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .scrollBackground {
+    height: auto;
+    padding: 20px;
+    background-position: center;
+    background-attachment: scroll;
+  }
+  .popup {
+    width: 80%;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+@media (min-width: 801px) and (max-width: 1024px) {
+  .nav {
+    padding: 20px 0;
+  }
+  .nav ul {
+    flex-direction: row;
+  }
+  .navGray {
+    padding: 10px 0;
+  }
+  .swiper2 {
+    height: auto;
+  }
+  .swiper2 img {
+    height: auto;
+  }
+  .horizontalHalfDivide,
+  .horizontalHalfDivide2,
+  .horizontalHalfDivide3,
+  .longBlackContent {
+    flex-direction: column;
+    padding: 20px;
+    overflow: hidden;
+  }
+  .horizontalHalfDivide img,
+  .horizontalHalfDivide2 img,
+  .horizontalHalfDivide3 img {
+    width: 100%;
+    height: auto;
+  }
+  .blackContent {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .scrollBackground {
+    height: auto;
+    padding: 40px;
+    background-position: center;
+    background-attachment: scroll;
+  }
+  .popup {
+    width: 70%;
+  }
+  .hamburger {
+    display: block;
+  }
+}
 .hamburger {
   display: none;
   float: right;
@@ -12,6 +147,54 @@ body {
   background-color: #000;
 }
 
+.day {
+  background-color: #fff;
+  color: #000;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #252525;
+  color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+label {
+  position: absolute;
+  width: 45px;
+  padding: 11px 0 11px 0;
+  right: 20px;
+  top: 45px;
+  border: 2px solid;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: border-color 0.4s;
+}
+
+label:before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  padding: 10px 0 10px 0;
+  left: 1px;
+  top: 1px;
+  border-radius: 50%;
+  background: #353232;
+  transition: 0.4s;
+}
+
+label.active:before {
+  left: 24px;
+  background: #fff;
+}
+
 .nav {
   background-color: #B50014;
   height: 93px;
@@ -23,14 +206,12 @@ body {
   align-items: center;
 }
 .nav .icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0;
 }
 .nav .smallIcon {
   width: 24px;
   height: 28px;
-  margin-right: 6px;
+  margin-top: 6px;
 }
 
 .navGray {
@@ -38,6 +219,11 @@ body {
   color: #fff;
   text-align: right;
   height: 30px;
+}
+.navGray .smallIcon {
+  width: 15px;
+  height: 15px;
+  margin-right: 6.95px;
 }
 
 .openText {
@@ -77,6 +263,7 @@ img {
 
 .swiper2 {
   height: 679px;
+  position: relative;
 }
 .swiper2 img {
   width: 100%;
@@ -95,14 +282,14 @@ img {
   width: 140px;
 }
 .swiper2 .swiper-button-prev {
-  position: relative;
-  bottom: 0;
-  padding-bottom: 52px;
+  position: absolute;
+  padding-top: 550px;
+  margin-left: 644px;
 }
 .swiper2 .swiper-button-next {
-  position: relative;
-  bottom: 0;
-  padding-bottom: 52px;
+  position: absolute;
+  padding-top: 550px;
+  margin-right: 644px;
 }
 
 .logoTop {
@@ -258,7 +445,6 @@ img {
 }
 
 .blackContent {
-  background-color: #000;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -497,7 +683,7 @@ img {
 
 .swiperBottom {
   width: 1098px;
-  height: 429x;
+  height: auto;
   padding: 0;
   margin: 0 auto 0 auto;
 }
@@ -522,6 +708,15 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.swiperBottom .swiper-slide .slideContent .quote {
+  z-index: 5;
+  width: 44.51px;
+  height: 36.41px;
+  height: auto;
+  position: absolute;
+  bottom: -5%;
+  margin-left: 60%;
 }
 .swiperBottom .swiper-slide .smallp {
   font-weight: 300;
@@ -607,15 +802,6 @@ img {
 
 .swiper-button-prev::after {
   display: none;
-}
-
-.quote {
-  z-index: 3;
-  width: 5%;
-  height: auto;
-  position: absolute;
-  bottom: 10%;
-  margin-left: 60%;
 }
 
 footer {
@@ -739,4 +925,27 @@ footer {
 .active {
   background-color: #04AA6D;
   color: white;
+}
+
+.longBlackContent.day .imgBig {
+  -webkit-filter: invert(100%);
+  /* Safari/Chrome */
+  filter: invert(100%);
+}
+
+.day .lineLogo {
+  -webkit-filter: invert(100%);
+  /* Safari/Chrome */
+  filter: invert(100%);
+}
+.day .medalText {
+  color: #000;
+}
+.day .empfehlungs {
+  color: #000;
+}
+.day .sMedia {
+  -webkit-filter: invert(100%);
+  /* Safari/Chrome */
+  filter: invert(100%);
 }

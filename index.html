@@ -16,6 +16,14 @@
 </head>
 
 <body>
+    <div id="popup" class="popup">
+        <h2>Cookies</h2>
+        <p>Do you agree to accept all cookies?</p>
+        <button onclick="closePopup()">Accept</button>
+    </div>
+
+
+
     <div class="nav">
         <ul>
             <li><a href="#">Die Metzgerei</a></li>
@@ -26,13 +34,19 @@
             <li><a href="#">Tagesessen</a></li>
             <li><a href="#">Impressum</a></li>
             <li><a href="#">Kontakt</a></li>
-            <li><a href="#" class="icon"><img src="images/pdfIcon.png" class="smallIcon">download</a></li>
+            <li><img src="images/pdfIcon.png" class="smallIcon"></li>
+            <li><a href="#" class="icon">download</a></li>
 
         </ul>
+        <!--Light-Dark Mode start-->
+        <div class="dark-light-container">
+            <label id="dark-change"></label>
+        </div>
+        <!--Light-Dark Mode end-->
     </div>
 
     <div class="navGray">
-        <p class="openText"><span class="bold">Opentime:</span> Di. - Fr.: 07:00-13:00 und 15:00-18:30. Sa.: 07:30 -
+        <p class="openText"><span class="bold"><img src="images/clockIcon.png" class="smallIcon">Opentime:</span> Di. - Fr.: 07:00-13:00 und 15:00-18:30. Sa.: 07:30 -
             12:30</p>
     </div>
     <img src="images/logo.png" class="logoTop">
@@ -195,7 +209,9 @@
                             dolore magna Luftballons Ut Turnbeutel nostrud exercitation ullamco .</p>
 
                         <span class="name">Halling Tobias<br>Koch</span>
+                        <img src="images/quote.png" class="quote">
                     </div>
+                    
                 </div>
                 <div class="swiper-slide">
                     <div class="slideContent">
@@ -206,12 +222,12 @@
                     </div>
                 </div>
             </div>
-            <img src="images/quote.png" class="quote">
         </div>
     </div>
     <footer class="firstFooter">
         <ul class="leftList">
-            <li><img src="images/locationIcon.png" class="smallIcon">Klauprechtstraße 25<br> 76137 Karlsruhe, Germany</li>
+            <li><img src="images/locationIcon.png" class="smallIcon">Klauprechtstraße 25<br> 76137 Karlsruhe, Germany
+            </li>
             <li><img src="images/phoneIcon.png" class="smallIcon">+49 721 358060</li>
             <li><img src="images/mailIcon.png" class="smallIcon">info@partyservice-brath.de</li>
         </ul>
